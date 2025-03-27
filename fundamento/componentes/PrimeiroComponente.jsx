@@ -3,16 +3,20 @@ import React from 'react'
 
 export default function PrimeiroComponente() {
   return (
-    <View>
-      <Text>PrimeiroComponente</Text>
+    <View style={styles.container}>
+      <Text style={styles.texto}>PrimeiroComponente</Text>
     </View>
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
 container: {
-    backgroundColor: 'red'
-}
+    backgroundColor: 'red',
+    padding: 20,
+    borderWidth: 10
+},
 texto: {
-    
+    fontSize: 20,
+    fontWeight: 600
 }
+}) 
